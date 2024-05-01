@@ -4,19 +4,19 @@ class Program
 {
     static void Main(string[] args)
     {
+        Console.WriteLine("Welcome to Guess my number game!");
+
         Random randomGenerator = new Random();
-        int magicNumber = randomGenerator.Next(1, 101);
+        int magicNumber = randomGenerator.Next(-1, 101);
 
-        int guess = -1;
-        int attempts = 0; 
-
-        Console.WriteLine("Guees a number between 1 and 100!");
+        int guess =-1;
+        int attemps = 0;
 
         while (guess != magicNumber)
         {
             Console.Write("What is your guess? ");
-            guess = int.Parse(Console.ReadLine()); 
-            attempts++; 
+            guess = int.Parse(Console.ReadLine());
+            attemps ++;
 
             if (guess < magicNumber)
             {
@@ -26,10 +26,35 @@ class Program
             {
                 Console.WriteLine("Lower");
             }
-            else
+            else 
             {
-                Console.WriteLine($"You guessed it! It took you {attempts} attempts.");
+                Console.WriteLine($"You guessed it! It took you {attemps} attemps.");
             }
         }
+        // string response = ;
+        
+
+        // while (response == "yes")
+        // {
+        //     Console.Write("Do you want to continue? ");
+        //     response = Console.ReadLine();
+        // }
+
+        // do
+        // {
+        //     Console.Write("Do you want to continue? ");
+        //     response = Console.ReadLine();
+        // } while (response == "yes");
+
+        // for (int i = 0; i < 10; i++)
+        // {
+        //     Console.WriteLine(i);
+        // }
+
+        // foreach (string color in colors)
+        // {
+        //     Console.WriteLine(color);
+        // }
+
     }
 }
