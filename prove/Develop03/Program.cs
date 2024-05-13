@@ -1,5 +1,7 @@
 using System;
 
+//Some of my extra requirements is that i made that the list that i created i did that it does't repeat the same words that it already deleted.
+//I add the own reference scripture and different text that the user wants to add.
 class Program
 {
     static void Main(string[] args)
