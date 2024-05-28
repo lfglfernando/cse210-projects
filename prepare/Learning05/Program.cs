@@ -6,27 +6,30 @@ class Program
     static void Main(string[] arg)
     {
 
-        //Create a list to hold Shapes
-        List<Shape> shapes = new List<Shape>();
 
-        Square formula1 = new Square("Red", 3.77);
-        shapes.Add(formula1);
+        GoalManager goalManager = new GoalManager();
+        goalManager.Start();
+        // //Create a list to hold Shapes
+        // List<Shape> shapes = new List<Shape>();
 
-        Rectangle formula2 = new Rectangle("Green", 5, 5);
-        shapes.Add(formula2);
+        // Square formula1 = new Square("Red", 3.77);
+        // shapes.Add(formula1);
 
-        Circle formula3 = new Circle("Blue", 10);
-        shapes.Add(formula3);
+        // Rectangle formula2 = new Rectangle("Green", 5, 5);
+        // shapes.Add(formula2);
 
-        //Get a custom calculation for each one
-        foreach(Shape shape in shapes)
-        {
-            string color = shape.GetColor();
-            double area = shape.GetArea();
+        // Circle formula3 = new Circle("Blue", 10);
+        // shapes.Add(formula3);
+
+        // //Get a custom calculation for each one
+        // foreach(Shape shape in shapes)
+        // {
+        //     string color = shape.GetColor();
+        //     double area = shape.GetArea();
             
-            Console.WriteLine($"The {color} shape has an area of {area}.");
+        //     Console.WriteLine($"The {color} shape has an area of {area}.");
 
-        }
+        // }
 
 
 
